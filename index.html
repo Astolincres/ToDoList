@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">To Do List</div>
+        <div class="card">
+            <div class="add__delete">
+                <div class="add__container">
+                    <img class="add_image" src="./images/add.png" alt="">
+                </div>
+                <div class="edit__container">
+                    <img class="edit_image" src="./images/edit.png" alt="">
+                </div>
+                <div class="complete__container">
+                    <div></div>
+                </div>
+                <div class="remove__container">
+                    <img class="remove_image" src="./images/delete.png" alt="">
+                </div>
+            </div>
+            <div class="left__card">
+                <ul class="list__container dropzone">
+                    
+                </ul>
+            </div>
+            <div class="right__card">
+                <div class="description">
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <form action="" class="form">
+                <div class="close"></div>
+                <label for="task_name">Name:</label>
+                <input class="input__name" type="text" name="task_name" placeholder="Task Name">
+                <label for="task_description">Description:</label>
+                <textarea class="input__description" name="task_description" id="" cols="30" rows="10" placeholder="Task description"></textarea>
+                <label for="priority">Priority</label>
+                <div class="priority">
+                    <input type="radio" name="priority" value="low" id="low">
+                    <label for="low">Low</label>
+                    <input type="radio" name="priority"  value="medium" id="medium">
+                    <label for="medium">Medium</label>
+                    <input type="radio" name="priority" value="high" id="high">
+                    <label for="high">High</label>
+                </div>
+                <input class="submit" type="submit" value="Add">
+            </form>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
