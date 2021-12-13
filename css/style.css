@@ -14,7 +14,7 @@
 }
 
 .title {
-    padding: 50px;
+    padding: 25px;
     font-size: 6rem;
     color: #a72907;
 }
@@ -26,7 +26,7 @@
     border-radius: 10px;
     display: flex;
     padding: 25px 0px;
-    min-height: 200px;
+    min-height: 400px;
 }
 
 .add__delete {
@@ -75,7 +75,7 @@
     border: solid 2px #5e3963;
 }
 
-.complete__container > div {
+.complete_img{
     width: 70%;
     height: 70%;
     background-color: #D2D8EF;
