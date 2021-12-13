@@ -220,6 +220,7 @@
     flex-direction: column;
     text-align: center;
     gap: 10px;
+    
 }
 
 .close {
@@ -241,6 +242,29 @@
     gap: 4px;   
 }
 
+.input__name {
+    padding: 5px 5px;
+    background: #F2D3CF;
+    border: none;
+}
+
+.input__description {
+    padding: 5px 5px;
+    background: #F2D3CF;
+}
+
+.submit {
+    border: none;
+    border-radius: 8px;
+    padding: 5px 5px;
+    cursor: pointer;
+    background: #A5B2DF;
+}
+
+.submit:hover {
+    outline: solid 2px #5e3963;
+    background-color: #7797e2;
+}
 /* Scroll */ 
 /* width */
 ::-webkit-scrollbar {
@@ -310,5 +334,9 @@
 
     .form {
         width: 80%;
+    }
+
+    .priority {
+        flex-wrap: wrap;
     }
 }
