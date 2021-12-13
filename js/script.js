@@ -211,13 +211,17 @@ completeTask.addEventListener('click', ()=> {
 });
 
 removeTask.addEventListener('click', (e)=>{
-    Array.from(listContainer.children).forEach((element)=>{
-        if (element.classList.contains('focus')){
-            delete info[element.getAttribute('data-id')];
-            listContainer.removeChild(element);
+	Array.from(listContainer.children).forEach((element)=>{
+		if (element.classList.contains('focus')){
+            element.classList.add('delete__task');
             description.removeChild(description.firstChild);
-        }
-    });
+            delete info[element.getAttribute('data-id')];
+            setTimeout(()=>{
+                listContainer.removeChild(element);
+            },900);
+			
+		}
+	});
 });
 
 Object.keys(info).forEach((key)=>{
