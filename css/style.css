@@ -242,6 +242,10 @@
     gap: 4px;   
 }
 
+.priority__div {
+    gap: 4px;
+}
+
 .input__name {
     padding: 5px 5px;
     background: #F2D3CF;

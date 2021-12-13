@@ -42,8 +42,7 @@ let numberOfTask = Object.keys(info)['length'];
 
 //Show add popup
 addTask.addEventListener('click',() => {
-    if(Array.from(priorityForm.children).length>6) {
-        priorityForm.removeChild(priorityForm.lastChild);
+    if(Array.from(priorityForm.children).length>3) {
         priorityForm.removeChild(priorityForm.lastChild);
     }
     inputDescription.value = "";
@@ -66,10 +65,10 @@ editTask.addEventListener('click', ()=> {
         }
     });
     if (!isFocus) return;
-    if(Array.from(priorityForm.children).length>6) {
-        priorityForm.removeChild(priorityForm.lastChild);
+    if(Array.from(priorityForm.children).length>3) {
         priorityForm.removeChild(priorityForm.lastChild);
     }
+    let div = document.createElement('div');
     let inputRadio = document.createElement('input');
     let label = document.createElement('label');
     label.setAttribute('for', 'complete');
@@ -78,8 +77,10 @@ editTask.addEventListener('click', ()=> {
     inputRadio.name = "priority";
     inputRadio.value = "complete";
     inputRadio.id = "complete";
-    priorityForm.appendChild(inputRadio);
-    priorityForm.appendChild(label);
+    div.appendChild(inputRadio);
+    div.appendChild(label);
+    div.classList.add('priority__div');
+    priorityForm.appendChild(div);
     const priorityCompleteForm = document.querySelector('#complete');
     switch (info[key].priority) {
         case 'low':
