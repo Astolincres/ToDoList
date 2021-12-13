@@ -21,7 +21,7 @@
 .title {
     padding: 25px;
     font-size: 6rem;
-    color: #a72907;
+    color: #e9403a;
 }
 
 .card {
@@ -239,11 +239,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4px;   
+    gap: 10px;   
 }
 
 .priority__div {
-    gap: 4px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .input__name {
@@ -257,6 +259,7 @@
     background: #F2D3CF;
     resize: none;
     border: none;
+    height: 50%;
 }
 
 .submit {
@@ -340,6 +343,7 @@
 
     .form {
         width: 80%;
+        height: 80%;
     }
 
     .priority {
