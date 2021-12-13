@@ -49,7 +49,8 @@ addTask.addEventListener('click',() => {
     inputName.value = "";
     submit.value = "Add";
     priorityLowForm.checked = true;
-    modal.style.display = "flex";
+    modal.style.display = "flex"
+    modal.classList.add('modal-fade-in');
 });
 
 
@@ -171,19 +172,32 @@ const updateData = (e)=> {
         }
         updateTask(nextKey);
     }
-    modal.style.display = "none";
+    modal.classList.add('modal-fade-out');
+    setTimeout(()=>{
+        modal.classList.remove('modal-fade-out');
+        modal.style.display = 'none';
+    }, 1000);
+    
 };
 
 form.addEventListener('submit', e => updateData(e));
 
 
 closeModal.addEventListener('click', ()=> {
-    modal.style.display = "none";
+    modal.classList.add('modal-fade-out');
+    setTimeout(()=>{
+        modal.classList.remove('modal-fade-out');
+        modal.style.display = 'none';
+    }, 1000);
 });
 
 modal.addEventListener('click',(e)=>{
     if (e.target == modal){
-        modal.style.display = "none";
+        modal.classList.add('modal-fade-out');
+        setTimeout(()=>{
+            modal.classList.remove('modal-fade-out');
+            modal.style.display = 'none';
+        }, 1000);
     }
 });
 

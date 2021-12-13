@@ -274,6 +274,37 @@
     outline: solid 2px #5e3963;
     background-color: #7797e2;
 }
+
+
+.modal-fade-in {
+    animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        display: flex;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.modal-fade-out {
+    animation: fade-out 1s forwards;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+        
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
 /* Scroll */ 
 /* width */
 ::-webkit-scrollbar {
