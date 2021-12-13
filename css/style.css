@@ -255,6 +255,7 @@
 .input__description {
     padding: 5px 5px;
     background: #F2D3CF;
+    resize: none;
 }
 
 .submit {
