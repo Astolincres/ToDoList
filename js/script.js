@@ -103,6 +103,7 @@ editTask.addEventListener('click', ()=> {
     inputName.value = info[key].name;
     inputDescription.value = info[key].description;
     modal.style.display = "flex";
+    modal.classList.add('modal-fade-in');
 });
 
 const updateTask = (key, value = true)=>{
